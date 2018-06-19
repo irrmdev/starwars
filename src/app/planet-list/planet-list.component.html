@@ -1,3 +1,9 @@
-<p>
-  planet-list works!
-</p>
+<ul>
+  <li *ngFor="let planet of planets">
+    {{planet.name}} Clima:{{planet.climate}}  
+  </li>
+</ul>
+
+<div *ngIf="error">
+  {{error}}
+</div>
