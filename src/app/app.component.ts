@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+  searchData:string;
+
+  onBuscar(text: string): void{
+    this.searchData = text;
+   }
 }
+
