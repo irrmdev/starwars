@@ -8,6 +8,7 @@ import { PlanetDetailComponent } from './planet-detail/planet-detail.component';
 import { PlanetListComponent } from './planet-list/planet-list.component';
 import { FilterComponent } from './filter/filter.component';
 import { StarWarsService } from './Services/star-wars.service';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { StarWarsService } from './Services/star-wars.service';
     FilterComponent
   ],
   imports: [
-    BrowserModule, HttpClientModule
+    BrowserModule, HttpClientModule, FormsModule
+
   ],
   providers: [StarWarsService],
   bootstrap: [AppComponent]
